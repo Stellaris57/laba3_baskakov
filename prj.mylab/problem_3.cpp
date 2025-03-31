@@ -37,7 +37,7 @@ int main() {
     try {
         File fileManager("problem3.txt");
 
-        // Запись и чтение
+        // запись и чтение
         fileManager.write("Hello, World!");
         fileManager.write("This is a test.");
         std::string filename = "problem3.txt";

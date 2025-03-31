@@ -24,8 +24,8 @@ int main() {
 
     observer.check(); //вывод: 100
 
-    sharedInt.reset(); //освобождаем наш ресурс
+    sharedInt.reset(); //освобождаем 
 
-    observer.check(); //объект больше не существует
+    observer.check(); //вывод: объект больше не существует
     return 0;
 }
