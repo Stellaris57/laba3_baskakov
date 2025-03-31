@@ -13,7 +13,6 @@ public:
             std::cout << "Observed object no longer exists." << std::endl;
         }
     }
-
 private:
     std::weak_ptr<int> observedPtr;
 };
@@ -23,9 +22,7 @@ int main() {
     Observer observer(sharedInt);
 
     observer.check(); //вывод: 100
-
     sharedInt.reset(); //освобождаем 
-
     observer.check(); //вывод: объект больше не существует
     return 0;
 }
